@@ -1,0 +1,72 @@
+import random
+
+print("--------------------------------------------------------")
+print("         Juego piedra papel o tijeras random")
+print("--------------------------------------------------------")
+print()
+print("""Piedra:  5
+Papel:  6
+Tijeras:  7""")
+print()
+print("--------------------------------------------------------")
+
+while True:
+  jugador1 = input("Elige piedra, papel o tijeras: ")
+  jugador2 = 7
+  for i in range(1,1):
+    jugador2 = random.randint(5,7)
+  print()
+  print("-----------------------------------------------------")
+
+  if (jugador1 == jugador2) and (jugador1 == "5" or jugador1 ==   "6" or jugador1 == "7") :
+    print("                      Empate")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
+  # Si jugador 1 y jugador 2 son el mismo numero y jugador1 = 5     o 6 o 7, hay empate
+  if jugador1 == "5" and jugador2 == "7":     # Gana Jugador 1 
+    print("              Ha ganado el Jugador 1")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
+  if jugador1 == "6" and jugador2 == "5":    # Gana Jugador 1
+    print("              Ha ganado el Jugador 1")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
+  if jugador1 == "7" and jugador2 == "6":    # Gana Jugador 1
+    print("              Ha ganado el Jugador 1")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
+  if jugador1 == "7" and jugador2 == "5":    # Gana Jugador 2
+    print("              Ha ganado el Jugador 2")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
+  if jugador1 == "5" and jugador2 == "6":    # Gana Jugador 2
+    print("              Ha ganado el Jugador 2")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
+    
+  if jugador1 == "6" and jugador2 == "7":    # Gana Jugador 2
+    print("              Ha ganado el Jugador 2")
+    print("------------------------------------------")
+    repetir = input("¿Quieres Jugar otra vez? ")
+    if repetir == "si" or repetir == "Si":
+      print()
+    elif repetir == "no" or repetir == "No":
+      break
